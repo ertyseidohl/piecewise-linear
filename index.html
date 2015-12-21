@@ -3,11 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Piecewise Linear Entry</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<div id="app"></div>
-	<script src="./script.js"></script>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-lg-8">
+				<canvas id="canvas"></canvas>
+			</div>
+			<div class="col-xs-12 col-lg-4">
+				<div class="well">
+					<textarea id="json"></textarea>
+					<button id="json_update" class="btn btn-default">Update</button>
+					<p id="json_error"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./src/point.js"></script>
+	<script src="./src/settings.js"></script>
+	<script src="./src/controller.js"></script>
+	<script src="./src/model.js"></script>
+	<script src="./src/renderer.js"></script>
+	<script src="./src/tester.js"></script>
+	<script src="./src/index.js"></script>
 </body>
 </html>
