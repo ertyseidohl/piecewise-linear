@@ -34,7 +34,9 @@
 		this.model = model;
 		this.view = view;
 		this.controller = controller;
-		this.runTests();
+		if (window.settings.run_tests) {
+			this.runTests();
+		}
 	};
 
 	exports.Tester.prototype = {

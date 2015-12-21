@@ -13,7 +13,8 @@ window.settings = {
 	point_line_color: "#000",
 	point_line_thickness: 3,
 	point_radius: 5,
-	y_offset_zero: 300
+	y_offset_zero: 300,
+	run_tests: true
 };
 
 window.settings.getSnappedCursor = function(cursor) {
