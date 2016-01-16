@@ -18,8 +18,12 @@ window.settings = {
 };
 
 window.settings.getSnappedCursor = function(cursor) {
+	var newX = cursor.x + (settings.x_step_minor / 2);
+	newX -= (newX % settings.x_step_minor);
+	var newY = cursor.y + (settings.y_step_minor / 2);
+	newY -= (newY % settings.y_step_minor);
 	return {
-		x: cursor.x - (cursor.x % settings.x_step_minor),
-		y: cursor.y - (cursor.y % settings.y_step_minor),
+		x: newX,
+		y: newY
 	};
 };
